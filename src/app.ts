@@ -16,7 +16,7 @@ const main = async (): Promise<void> => {
   });
 
   const token = moonshot.Token({
-    mintAddress: 'AhaAKM3dUKAeYoZCTXF8fqqbjcvugbgEmst6557jkZ9h',
+    mintAddress: 'HLzCwHi19PkUGmasU1naAYMuigsbTsHcj4egDdhd24s1',
   });
 
   const curvePos = await token.getCurvePosition();
