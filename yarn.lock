@@ -1037,10 +1037,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@wen-moon-ser/moonshot-sdk@^0.0.1-alpha.25":
-  version "0.0.1-alpha.25"
-  resolved "https://registry.yarnpkg.com/@wen-moon-ser/moonshot-sdk/-/moonshot-sdk-0.0.1-alpha.25.tgz#a582f827b17177d07be705b95da1827666771dfc"
-  integrity sha512-2vEveqTLKy8tUfI0FrUkXWmsi97zk9cPtMOVTiiguESxzvFsYEJw8ceFYxP7PmCAcOOG4cs7tzPyBwOSjGxQgg==
+"@wen-moon-ser/moonshot-sdk@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@wen-moon-ser/moonshot-sdk/-/moonshot-sdk-0.0.1.tgz#f739772d1066b12562a3b36eb4f672761bf50295"
+  integrity sha512-wWNHnr1zwQxj4+ftQv5smYqU6UKyokCvl+u31FJcLBdLQOBPron2ZAkiBJ8VdA1FU/7uIqQAK/hJ90YZHIO3gg==
   dependencies:
     "@coral-xyz/anchor" "^0.29.0"
     "@heliofi/launchpad-common" "^0.0.23"
