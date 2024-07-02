@@ -31,7 +31,8 @@
     "typescript": "^5.5.2"
   },
   "dependencies": {
-    "@wen-moon-ser/moonshot-sdk": "^0.0.1-alpha.20"
+    "@solana/web3.js": "^1.94.0",
+    "@wen-moon-ser/moonshot-sdk": "^0.0.1-alpha.25"
   },
   "eslintConfig": {
     "root": true,

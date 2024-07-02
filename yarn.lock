@@ -721,7 +721,7 @@
     "@solana/buffer-layout-utils" "^0.2.0"
     buffer "^6.0.3"
 
-"@solana/web3.js@^1.32.0", "@solana/web3.js@^1.68.0", "@solana/web3.js@^1.91.8":
+"@solana/web3.js@^1.32.0", "@solana/web3.js@^1.68.0", "@solana/web3.js@^1.91.8", "@solana/web3.js@^1.94.0":
   version "1.94.0"
   resolved "https://registry.yarnpkg.com/@solana/web3.js/-/web3.js-1.94.0.tgz#f662ce046f59cb294e8304beeb4d549c3ff05d73"
   integrity sha512-wMiBebzu5I2fTSz623uj6VXpWFhl0d7qJKqPFK2I4IBLTNUdv+bOeA4H7OBM7Gworv7sOvB3xibRql6l61MeqA==
@@ -1037,10 +1037,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@wen-moon-ser/moonshot-sdk@^0.0.1-alpha.20":
-  version "0.0.1-alpha.20"
-  resolved "https://registry.yarnpkg.com/@wen-moon-ser/moonshot-sdk/-/moonshot-sdk-0.0.1-alpha.20.tgz#e11d3f6966f5117d8397939ed21a283970735d84"
-  integrity sha512-nIQ8Vfgz5xwsVOGXAVVQjN8vICQdBgIX0r8pXD/mL0Pj+QYR8r7Sfp+ChkBgOoNYGmuXOI5cxlspALp5QnPl5g==
+"@wen-moon-ser/moonshot-sdk@^0.0.1-alpha.25":
+  version "0.0.1-alpha.25"
+  resolved "https://registry.yarnpkg.com/@wen-moon-ser/moonshot-sdk/-/moonshot-sdk-0.0.1-alpha.25.tgz#a582f827b17177d07be705b95da1827666771dfc"
+  integrity sha512-2vEveqTLKy8tUfI0FrUkXWmsi97zk9cPtMOVTiiguESxzvFsYEJw8ceFYxP7PmCAcOOG4cs7tzPyBwOSjGxQgg==
   dependencies:
     "@coral-xyz/anchor" "^0.29.0"
     "@heliofi/launchpad-common" "^0.0.23"
