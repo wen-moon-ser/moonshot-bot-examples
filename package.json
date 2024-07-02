@@ -7,7 +7,8 @@
     "watch": "tsc --watch",
     "test": "jest",
     "lint": "eslint 'src/**/*.{js,ts}'",
-    "format": "prettier --write 'src/**/*.{js,ts,json,md}'"
+    "format": "prettier --write 'src/**/*.{js,ts,json,md}'",
+    "start": "node dist/index.js"
   },
   "repository": "git@github.com:wen-moon-ser/moonshot-bot-examples.git",
   "author": "",
@@ -30,7 +31,7 @@
     "typescript": "^5.5.2"
   },
   "dependencies": {
-    "axios": "^1.7.2"
+    "@wen-moon-ser/moonshot-sdk": "^0.0.1-alpha.20"
   },
   "eslintConfig": {
     "root": true,
