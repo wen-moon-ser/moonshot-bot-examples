@@ -8,7 +8,7 @@
     "test": "jest",
     "lint": "eslint 'src/**/*.{js,ts}'",
     "format": "prettier --write 'src/**/*.{js,ts,json,md}'",
-    "start": "node dist/index.js"
+    "start": "node dist/src/app.js"
   },
   "repository": "git@github.com:wen-moon-ser/moonshot-bot-examples.git",
   "author": "",
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@solana/web3.js": "^1.94.0",
-    "@wen-moon-ser/moonshot-sdk": "^0.0.1-alpha.4"
+    "@wen-moon-ser/moonshot-sdk": "^0.1.0-alpha.0.0.2"
   },
   "eslintConfig": {
     "root": true,
