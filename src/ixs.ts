@@ -6,12 +6,10 @@ import {
   TransactionMessage,
   VersionedTransaction,
 } from '@solana/web3.js';
-import testWallet from '../test-wallet.json';
+import { signVersionedTransaction } from './utils';
 
 const main = async (): Promise<void> => {
-  const rpcUrl = 'https://api.devnet.solana.com';
-
-  const connection = new Connection(rpcUrl);
+  const rpcUrl = 'https://api.mainnet-beta.solana.com';
 
   const moonshot = new Moonshot({
     rpcUrl,
@@ -20,15 +18,14 @@ const main = async (): Promise<void> => {
   });
 
   const token = moonshot.Token({
-    mintAddress: '3Rai792zaN5adyc2oEFGg1JLV4S9SYi51HrtMw7qRz8o',
+    mintAddress: 'HLzCwHi19PkUGmasU1naAYMuigsbTsHcj4egDdhd24s1',
   });
 
   const curvePos = await token.getCurvePosition();
-  console.log('Current position of the curve: ', curvePos); // Prints the current curve position
+  console.log(curvePos); // Prints the current curve position
 
+  const creator = new Keypair();
   // make sure creator has funds
-  const creator = Keypair.fromSecretKey(Uint8Array.from(testWallet));
-  console.log('Creator: ', creator.publicKey.toBase58());
 
   const tokenAmount = 100000n * 1000000000n; // Buy 100k tokens
 
@@ -45,27 +42,30 @@ const main = async (): Promise<void> => {
     tradeDirection: 'BUY',
   });
 
-  const priorityIx = ComputeBudgetProgram.setComputeUnitPrice({
-    microLamports: 200_000,
-  });
+  const priorityFee = 1000;
+  ixs.unshift(
+    ComputeBudgetProgram.setComputeUnitPrice({
+      microLamports: priorityFee,
+    }),
+  );
 
-  const blockhash = await connection.getLatestBlockhash('confirmed');
+  const connection = new Connection(rpcUrl);
+
+  const latestBlockHash = await connection.getLatestBlockhash('confirmed');
   const messageV0 = new TransactionMessage({
     payerKey: creator.publicKey,
-    recentBlockhash: blockhash.blockhash,
-    instructions: [priorityIx, ...ixs],
+    recentBlockhash: latestBlockHash.blockhash,
+    instructions: ixs,
   }).compileToV0Message();
-
   const transaction = new VersionedTransaction(messageV0);
 
-  transaction.sign([creator]);
-  const txHash = await connection.sendTransaction(transaction, {
+  const signedTx = signVersionedTransaction(transaction, creator);
+
+  await connection.sendTransaction(signedTx, {
     skipPreflight: false,
     maxRetries: 0,
     preflightCommitment: 'confirmed',
   });
-
-  console.log('Transaction hash:', txHash);
 };
 
 main().catch(console.error);
