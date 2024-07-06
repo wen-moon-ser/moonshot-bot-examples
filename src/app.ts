@@ -1,8 +1,4 @@
-import {
-  Moonshot,
-  Environment,
-  SolanaSerializationService,
-} from '@wen-moon-ser/moonshot-sdk';
+import { Moonshot, Environment } from '@wen-moon-ser/moonshot-sdk';
 import {
   ComputeBudgetProgram,
   Connection,
@@ -10,7 +6,6 @@ import {
   TransactionMessage,
   VersionedTransaction,
 } from '@solana/web3.js';
-import { signVersionedTransaction } from './utils';
 import testWallet from '../test-wallet.json';
 
 const main = async (): Promise<void> => {
@@ -29,7 +24,7 @@ const main = async (): Promise<void> => {
   });
 
   const curvePos = await token.getCurvePosition();
-  console.log(curvePos); // Prints the current curve position
+  console.log('Current position of the curve: ', curvePos); // Prints the current curve position
 
   // make sure creator has funds
   const creator = Keypair.fromSecretKey(Uint8Array.from(testWallet));
