@@ -1,4 +1,4 @@
-import { Moonshot, Environment } from '@wen-moon-ser/moonshot-sdk';
+import { Environment, FixedSide, Moonshot } from '@wen-moon-ser/moonshot-sdk';
 import {
   ComputeBudgetProgram,
   Connection,
@@ -8,7 +8,8 @@ import {
 } from '@solana/web3.js';
 import testWallet from '../test-wallet.json';
 
-const main = async (): Promise<void> => {
+export const sellIx = async (): Promise<void> => {
+  console.log('--- Selling token example ---');
   const rpcUrl = 'https://api.devnet.solana.com';
 
   const connection = new Connection(rpcUrl);
@@ -34,17 +35,19 @@ const main = async (): Promise<void> => {
 
   const tokenAmount = 10000n * 1000000000n; // Buy 10k tokens
 
+  // Buy example
   const collateralAmount = await token.getCollateralAmountByTokens({
     tokenAmount,
-    tradeDirection: 'BUY',
+    tradeDirection: 'SELL',
   });
 
   const { ixs } = await token.prepareIxs({
-    slippageBps: 100,
+    slippageBps: 500,
     creatorPK: creator.publicKey.toBase58(),
     tokenAmount,
     collateralAmount,
-    tradeDirection: 'BUY',
+    tradeDirection: 'SELL',
+    fixedSide: FixedSide.IN, // This means you will pay exactly the token amount slippage is applied to collateral amount
   });
 
   const priorityIx = ComputeBudgetProgram.setComputeUnitPrice({
@@ -67,7 +70,5 @@ const main = async (): Promise<void> => {
     preflightCommitment: 'confirmed',
   });
 
-  console.log('Transaction hash:', txHash);
+  console.log('Sell Transaction Hash:', txHash);
 };
-
-main().catch(console.error);
