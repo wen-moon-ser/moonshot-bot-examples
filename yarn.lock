@@ -368,10 +368,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.56.0.tgz#ef20350fec605a7f7035a01764731b2de0f3782b"
   integrity sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==
 
-"@heliofi/launchpad-common@1.0.0-alpha.0":
-  version "1.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@heliofi/launchpad-common/-/launchpad-common-1.0.0-alpha.0.tgz#4a18d90f1b9bd67ae3ff635fc9d3ca9999c3cf08"
-  integrity sha512-yFDn07yQMwC2P2+0mzz36F0tG1TRvhhTp7DGbhWp8NhxVPi/WwZgZkknEPOYqs9DhRbfWfM6Q2u9aqrU6mUPuA==
+"@heliofi/launchpad-common@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@heliofi/launchpad-common/-/launchpad-common-1.0.1.tgz#020bff72d37d9272752b4005b1f9c95865d00d51"
+  integrity sha512-ohL/THLa/+2RDrX52aHyKbe/wMXU+0XcxpBFtUERMMqloSkqCfFyVIFP2UcAewT9qCJud0rvB9opFdl6hjv0ug==
   dependencies:
     "@solana/web3.js" "^1.91.8"
     bignumber.js "9.1.1"
@@ -1037,13 +1037,13 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@wen-moon-ser/moonshot-sdk@2.0.0-alpha.0.0.5":
-  version "2.0.0-alpha.0.0.5"
-  resolved "https://registry.yarnpkg.com/@wen-moon-ser/moonshot-sdk/-/moonshot-sdk-2.0.0-alpha.0.0.5.tgz#7857360472f66c22e3a1d1f72a13c492832fa3cf"
-  integrity sha512-FRd1JxLAK9QaZ5avw12+GVSogoYpkSsNPpspucm0DFcSScTX/uN0yUjq80RD3sWK1P46HK8llBAjAoAXTY7E5A==
+"@wen-moon-ser/moonshot-sdk@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@wen-moon-ser/moonshot-sdk/-/moonshot-sdk-2.0.0.tgz#a0b07e4e7e38ea592e29b4b751e8675ddfe1f691"
+  integrity sha512-RYnUcFxkvZCRT0DzETkhFyMoBsEOLFos+9AZTzO9Ogt/RR5c3JfwaztcqNZogjah4zx5HXf9RIfehEt7xdF3Xw==
   dependencies:
     "@coral-xyz/anchor" "^0.29.0"
-    "@heliofi/launchpad-common" "1.0.0-alpha.0"
+    "@heliofi/launchpad-common" "1.0.1"
     "@solana/spl-token" "0.3.9"
     "@solana/web3.js" "^1.68.0"
     "@types/bn.js" "^5.1.5"
