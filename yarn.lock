@@ -368,10 +368,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.56.0.tgz#ef20350fec605a7f7035a01764731b2de0f3782b"
   integrity sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==
 
-"@heliofi/launchpad-common@^0.0.23":
-  version "0.0.23"
-  resolved "https://registry.yarnpkg.com/@heliofi/launchpad-common/-/launchpad-common-0.0.23.tgz#48a5f57256d5303544b87cb33f2ad470644bcb6e"
-  integrity sha512-F/CywMUQ+ouFLPnN2wS3/+UTeGfXt56qegkTdNyIwhzEs76pY4THmSuZn2B/u77eZg76cJ5URIuA+Mz77yZwZg==
+"@heliofi/launchpad-common@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@heliofi/launchpad-common/-/launchpad-common-1.0.1.tgz#020bff72d37d9272752b4005b1f9c95865d00d51"
+  integrity sha512-ohL/THLa/+2RDrX52aHyKbe/wMXU+0XcxpBFtUERMMqloSkqCfFyVIFP2UcAewT9qCJud0rvB9opFdl6hjv0ug==
   dependencies:
     "@solana/web3.js" "^1.91.8"
     bignumber.js "9.1.1"
@@ -1037,13 +1037,13 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@wen-moon-ser/moonshot-sdk@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@wen-moon-ser/moonshot-sdk/-/moonshot-sdk-1.0.0.tgz#628def0a210acb0206516e9849c43aa077a52023"
-  integrity sha512-HxtWz56vFYwubZBP8qWvaLG4g3Y5nTa7YnB2POEs2AkCHqYyefTSDsgMRrLabg9HeKYJjdojOy6h38Xj6Manpw==
+"@wen-moon-ser/moonshot-sdk@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@wen-moon-ser/moonshot-sdk/-/moonshot-sdk-2.0.0.tgz#a0b07e4e7e38ea592e29b4b751e8675ddfe1f691"
+  integrity sha512-RYnUcFxkvZCRT0DzETkhFyMoBsEOLFos+9AZTzO9Ogt/RR5c3JfwaztcqNZogjah4zx5HXf9RIfehEt7xdF3Xw==
   dependencies:
     "@coral-xyz/anchor" "^0.29.0"
-    "@heliofi/launchpad-common" "^0.0.23"
+    "@heliofi/launchpad-common" "1.0.1"
     "@solana/spl-token" "0.3.9"
     "@solana/web3.js" "^1.68.0"
     "@types/bn.js" "^5.1.5"
