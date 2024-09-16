@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@solana/web3.js": "^1.94.0",
-    "@wen-moon-ser/moonshot-sdk": "2.0.5"
+    "@wen-moon-ser/moonshot-sdk": "3.0.0"
   },
   "eslintConfig": {
     "root": true,
