@@ -368,10 +368,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.56.0.tgz#ef20350fec605a7f7035a01764731b2de0f3782b"
   integrity sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==
 
-"@heliofi/launchpad-common@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@heliofi/launchpad-common/-/launchpad-common-1.0.3.tgz#4cf2bf27508d7cd81c567ec86fdcfc4914b28c7d"
-  integrity sha512-W9zDC6goUpEdM/JyGQaiin4x/tjsUj2ebnvMMV7gTf6ia1ofuuAW7X+InKiXpJLr2rEnbXsjqVatcB5Nz9iXqQ==
+"@heliofi/launchpad-common@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@heliofi/launchpad-common/-/launchpad-common-1.1.2.tgz#9323edf8d869411310502fd6aec66fd1d16ef618"
+  integrity sha512-m9Z0pAR9KjBuox/PjnXztEC5zO4stFvhBxVGkDbLwLlkpn87EDf2jKLOKXWBUEaClYcECXYoCKhUa2mbBaYA7A==
   dependencies:
     "@solana/web3.js" "^1.91.8"
     bignumber.js "9.1.1"
@@ -1038,13 +1038,13 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@wen-moon-ser/moonshot-sdk@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@wen-moon-ser/moonshot-sdk/-/moonshot-sdk-3.0.0.tgz#f212535e52089a1ea50a8f2df9aa27606b51c580"
-  integrity sha512-0VoXztlfZzWRXD8Ab+9tUjWAF8qTFCymQ3aPx8clJL3cmk5BMf4xKY4ufi/MeQ68n7GAJLVIa2+TWCq+qpTgJg==
+"@wen-moon-ser/moonshot-sdk@4.0.0-alpha-0.0.2":
+  version "4.0.0-alpha-0.0.2"
+  resolved "https://registry.yarnpkg.com/@wen-moon-ser/moonshot-sdk/-/moonshot-sdk-4.0.0-alpha-0.0.2.tgz#b5fdd9a828b2919f2b50a14376f0182cc19e3945"
+  integrity sha512-QgzLhdpO/G/HWFETQsRXPzoSvdhfsknh4q4RIk+gW5M/ubEn5kK/Ubsju37sMGxdgHtpsmEQ1NZqmKAPO+8tmQ==
   dependencies:
     "@coral-xyz/anchor" "^0.29.0"
-    "@heliofi/launchpad-common" "1.0.3"
+    "@heliofi/launchpad-common" "1.1.2"
     "@solana/spl-token" "0.3.9"
     "@solana/web3.js" "^1.68.0"
     "@types/bn.js" "^5.1.5"
