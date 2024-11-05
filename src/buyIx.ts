@@ -23,9 +23,11 @@ export const buyIx = async (): Promise<void> => {
     },
   });
 
-  const token = moonshot.Token({
-    mintAddress: '3Rai792zaN5adyc2oEFGg1JLV4S9SYi51HrtMw7qRz8o',
-  });
+  const token = await moonshot
+    .Token({
+      mintAddress: '9ThH8ayxFCFZqssoZmodgvtbTiBmMoLWUqQhRAP89Y97',
+    })
+    .preload();
 
   const curvePos = await token.getCurvePosition();
   console.log('Current position of the curve: ', curvePos); // Prints the current curve position
@@ -37,9 +39,10 @@ export const buyIx = async (): Promise<void> => {
   const tokenAmount = 10000n * 1000000000n; // Buy 10k tokens
 
   // Buy example
-  const collateralAmount = await token.getCollateralAmountByTokens({
+  const collateralAmount = token.getCollateralAmountByTokensSync({
     tokenAmount,
     tradeDirection: 'BUY',
+    curvePosition: curvePos,
   });
 
   const { ixs } = await token.prepareIxs({
