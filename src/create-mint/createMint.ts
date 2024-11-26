@@ -23,7 +23,7 @@ export const createMint = async (): Promise<void> => {
     },
   });
 
-  const icon = imagePathToBase64('src/assets/icon.png');
+  const icon = await imagePathToBase64('src/assets/icon.png');
 
   const prepMint = await moonshot.prepareMintTx({
     creator: creator.publicKey.toBase58(),
